@@ -1,0 +1,33 @@
+data_configuration:
+  data_folder: '/home/ztp/workspace/Dataset-Tool-Segmentation/data/VOC/VOC2012'
+model_configuration:
+  channel_list:
+    - 3
+    - 64
+    - 128
+    - 256
+    - 512
+    - 1024
+  output_channel: 21
+  bias: False
+  residual_connection: False
+  forward_bn: False
+train_configuration:
+  experiment_folder: "./models"
+  model_name: "Unet"
+  experiment_result_folder: "./experiment_result"
+  experiment_result_file: "experiment_result.pkl"
+  bg_position: 0
+  num_class: 21
+  batch_size: 16
+  base_lr: 0.1
+  epochs: 100
+  epsilon: 1.0e-8
+  lr_decay_ratio: 0.1
+  steps:
+  - 10
+  - 20
+  - 30
+  - 50
+  sleep_time: 4
+

@@ -1,0 +1,35 @@
+data_configuration:
+  data_folder: "/home/ztp/workspace/dataset/aerial_imagery_dataset"
+  resize:
+    - 256
+    - 256
+model_configuration:
+  channel_list:
+    - 3
+    - 64
+    - 128
+    - 256
+    - 512
+    - 1024
+  output_channel: 2
+  bias: False
+  residual_connection: False
+  forward_bn: False
+train_configuration:
+  experiment_folder: "./models/RS_Unet_models"
+  model_name: "Unet"
+  experiment_result_folder: "./experiment_result/RS_Unet_result"
+  experiment_result_file: "experiment_result.pkl"
+  bg_position: 1
+  num_class: 2
+  batch_size: 16
+  base_lr: 0.003
+  epochs: 500
+  epsilon: 1.0e-8
+  lr_decay_ratio: 0.1
+  steps:
+  - 300
+  - 400
+  - 450
+  sleep_time: 10
+
