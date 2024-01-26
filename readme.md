@@ -1,20 +1,25 @@
 ## UNet Family
+
 In this program, I implemented three kind of models U-Net, UNet++ and UNet+++.
 Detailed code about these models can be found at the folder of "./ModelNet."
 Personally, from my experience achieving these algorithms, I think U-Net has the simplest structure than others no matter from perspectives of implementation or training cost.
+
 -----
 ### Dataset
+
 In our program, remote sensing images related to houses are used to train and predict. 
 These images come from a finished competition and can be downloaded at the [link](https://aistudio.baidu.com/datasetdetail/69911).
 The resolution of each remote sensing image is 512 * 512.
 
 ----
 ### Experimental Setting
+
 All of these models were implemented based on open source including python 1.7 and pytorch 1.7.1. 
 The service used to train these models is equipped with two Tesla T4 Gpus, each of which has 15G volume.
 Limited by our server configuration, I have to balance training time with model parameters.
 In order to achieve training process in a acceptable way, I have to resize raw picture to 256 * 256 and cut off last layer of both UNet++ and UNet+++ presenting in academic papers.
 The whole dataset is split to train and test datasets in the ratio of 8 to 2. The detailed configuration files of model are presented at the folder "./config".
+
 ----
 
 ### Folder Structure
