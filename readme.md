@@ -36,32 +36,41 @@ The whole dataset is split to train and test datasets in the ratio of 8 to 2. Th
 
 #### Performance of different model
 
-| Model |IOU| Accuracy |Total Epoch| AVG Training Time Per Epoch |
-|:-----:|:---:|:--------:|:---:|:---------------------------:|
-| U-Net |0.792|  0.961   |500|            95 s             |
-|   UNet++|0.806|  0.964   |500|            135 s            |
-|UNet+++|0.750|  0.953   |100|            185 s            |
+| Model |  IOU  | Accuracy |Total Epoch| AVG Training Time Per Epoch |
+|:-----:|:-----:|:--------:|:---:|:---------------------------:|
+| U-Net | 0.793 |  0.962   |500|            95 s             |
+|   UNet++| 0.806 |  0.964   |500|            135 s            |
+|UNet+++| 0.750 |  0.953   |100|            185 s            |
 
 #### Learning curve for different model
+
+- UNet
+![UNet](./ExperimentImages/RS_UNet/LearningCurve.png)
+
 - UNet++
 ![UNet++](./ExperimentImages/RS_UNetPP/LearningCurve.png)
 - UNet+++
 ![UNet+++](./ExperimentImages/RS_UNet3P/LearningCurve.png)
 
 #### IOU curve for different model
+- UNet
+![UNet](./ExperimentImages/RS_UNet/MIOU.png)
 - UNet++
 ![UNet++](./ExperimentImages/RS_UNetPP/MIOU.png)
 - UNet+++
 ![UNet++](./ExperimentImages/RS_UNet3P/MIOU.png)
 
 #### Accuracy curve for different model
+- UNet
+![UNet](./ExperimentImages/RS_UNet/AccuracyCurve.png)
 - UNet++
 ![UNet++](./ExperimentImages/RS_UNetPP/AccuracyCurve.png)
 - UNet+++
 ![UNet++](./ExperimentImages/RS_UNet3P/AccuracyCurve.png)
 
 #### Case study for different model
-
+- UNet
+![UNet](./ExperimentImages/RS_UNet/CaseStudy.png)
 - UNet++
 ![UNet++](./ExperimentImages/RS_UNetPP/CaseStudy.png)
 - UNet+++
